@@ -33,6 +33,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Header from './components/Header';
+import Menu from './components/OptionsMenu';
 
 setupIonicReact();
 
@@ -50,12 +52,18 @@ const App: React.FC = () => (
           <Route path="/tab3">
             <Tab3 />
           </Route>
+          <Route path="/header">
+            <Header />
+          </Route>
+          <Route path="/menu">
+            <Menu />
+          </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/header" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          {/* <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={triangle} />
             <IonLabel>Tab 1</IonLabel>
           </IonTabButton>
@@ -66,7 +74,10 @@ const App: React.FC = () => (
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon icon={square} />
             <IonLabel>Tab 3</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
+          {/* <Header currentTab = {'כל התמונות'}/> */}
+          <Header />
+          <Menu />
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
