@@ -6,7 +6,7 @@ const Form = () => {
     return (
         <IonPage>
             <React.Fragment>
-                <Login name="SignUp"/>
+                <Login />
             </React.Fragment>
         </IonPage>
     );
