@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.0.1",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.2.0",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "axios": "^1.2.1",
     "ionicons": "^6.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
